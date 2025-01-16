@@ -1,6 +1,5 @@
 import React from 'react'
 // import PropTypes from 'prop-types'
-let name = ",I am Usama";
 const Navbar = ({title = 'Usama',contact = 'Contact'}) => {
     return (
         <>
@@ -18,10 +17,6 @@ const Navbar = ({title = 'Usama',contact = 'Contact'}) => {
                 <div className="button">
                     <button>Logout</button>
                 </div>
-            </div>
-            <div className="container1">
-                <h1>Hi {name}</h1>
-                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit, nam iste at reiciendis cupiditate, nulla earum natus fugiat, tempora soluta corporis. Consectetur necessitatibus nobis velit, veritatis recusandae ullam nemo asperiores cum explicabo dignissimos repudiandae!</p>
             </div>
         </>
     )
