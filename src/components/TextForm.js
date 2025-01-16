@@ -17,6 +17,10 @@ const TextForm = () => {
         let newCount = count -1
         setCount(newCount)
     }
+    const reset = ()=>{
+        let newCount = 0;
+        setCount(newCount)
+    }
     const [text,setText]= useState('Enter Text Here')
     const [count,setCount] = useState(0)
     return (
@@ -29,6 +33,8 @@ const TextForm = () => {
         <h1>Count - {count}</h1>
         <button onClick={()=>{increment()}}>Increment</button>
         <button onClick={decrement}>Decrement</button>
+        <button onClick={reset}>Reset</button>
+        
         </>
     )
 }
